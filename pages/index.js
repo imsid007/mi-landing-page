@@ -24,7 +24,11 @@ export default function Home() {
                 <i>COMING SOON...</i>
               </div>
             </div>
-            <SocialButtons />
+            <Row>
+              <Col span={0} lg={24}>
+                <SocialButtons />
+              </Col>
+            </Row>
           </div>
         </Col>
         <Col span={24} lg={12}>
@@ -67,6 +71,11 @@ export default function Home() {
               </Form.Item>
             </Form>
           </div>
+          <Row>
+            <Col lg={0}>
+              <SocialButtons />
+            </Col>
+          </Row>
         </Col>
       </Row>
     </div>
