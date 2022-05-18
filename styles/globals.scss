@@ -1,0 +1,230 @@
+@import "./constants.scss";
+
+@font-face {
+  font-family: "Gilroy";
+  src: local("Gilroy"),
+    url(../fonts/Gilroy-Font/Gilroy-Black.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: local("Gilroy"),
+    url(../fonts/Gilroy-Font/Gilroy-Light.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 400;
+  src: local("Gilroy"),
+    url(../fonts/Gilroy-Font/Gilroy-Thin.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 600;
+  src: local("Gilroy"),
+    url(../fonts/Gilroy-Font/Gilroy-Medium.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 900;
+  src: local("Gilroy"),
+    url(../fonts/Gilroy-Font/Gilroy-ExtraBold.ttf) format("opentype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Gilroy !important;
+  color: #fff;
+  background-color: #100a2c;
+  font-size: 15px !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// antd styling update
+.ant-input {
+  width: 100% !important;
+  background-color: #fff0 !important;
+  border-radius: 50px !important;
+  border: 3px solid $text-color !important;
+  color: #fff !important;
+  padding: 20px 30px !important;
+  font-size: 1.2rem !important;
+  max-width: 550px !important;
+}
+
+.ant-form-item-control {
+  margin-bottom: 20px !important;
+}
+
+.ant-form-item-control-input-content {
+  text-align: center !important;
+}
+.ant-form-item-explain-error {
+  margin-left: 70px !important;
+  font-weight: 600;
+}
+
+.ant-btn {
+  background-color: $text-color !important;
+  border-radius: 100px !important;
+  font-size: 1.3rem !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-color: $text-color !important;
+  padding: 25px 60px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+// ====================
+
+.get-in-touch-txt {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.influencer-or-brand-container {
+  font-size: 2rem;
+  font-weight: 900;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.03rem;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.home-container {
+  padding: 0 80px;
+  height: 100vh;
+  width: 100vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #100a2c;
+  background-image: url(../public/images/mi-background.png);
+}
+
+.title {
+  margin-top: 50px;
+  color: $primary-color;
+  letter-spacing: 0.02rem;
+  font-size: 8rem;
+  font-weight: 900;
+  line-height: 8rem;
+}
+
+.sub-title {
+  color: $secondary-color;
+  font-weight: 600;
+  font-size: 7rem;
+  line-height: 7rem;
+}
+
+.we-are-txt {
+  margin-top: 60px;
+  font-weight: 700;
+  color: $text-color;
+  font-size: 1.8rem;
+  letter-spacing: 0.03rem;
+}
+
+.social-buttons-container {
+  margin-top: 50px;
+}
+
+.coming-soon-txt {
+  font-weight: 700;
+  color: #fff;
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+}
+
+.social-btn {
+  max-width: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.getting-discovered-txt {
+  color: $text-color;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.ant-btn-default {
+  margin: auto !important;
+}
+@media screen and (max-width: 600px) {
+  .ant-input {
+    padding: 10px 30px !important;
+    font-size: 1rem !important;
+  }
+
+  .ant-btn {
+    padding: 20px 40px !important;
+    font-size: 1.2rem !important;
+  }
+
+  .home-container {
+    height: auto;
+    width: 100vw;
+    padding: 0 30px;
+  }
+  .title {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .sub-title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .coming-soon-txt {
+    font-size: 2.1rem;
+    line-height: 2.1rem;
+  }
+
+  .influencer-or-brand-container {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .social-buttons-container {
+    margin-top: 20px;
+  }
+
+  .getting-discovered-txt {
+    font-size: 1rem;
+  }
+  .social-btn {
+    max-width: 30px;
+  }
+  .we-are-txt {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  .get-in-touch-txt {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+}
