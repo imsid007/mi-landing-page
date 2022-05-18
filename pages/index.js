@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <Header />
-      <Row>
+      <Row className="body-container">
         <Col span={24} lg={12}>
           <div>
             <div>
@@ -71,7 +71,7 @@ export default function Home() {
               </Form.Item>
             </Form>
           </div>
-          <Row>
+          <Row justify="center">
             <Col lg={0}>
               <SocialButtons />
             </Col>

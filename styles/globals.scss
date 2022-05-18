@@ -164,6 +164,7 @@ a {
   color: $text-color;
   font-size: 1.9rem;
   font-weight: 500;
+  text-align: end;
 }
 
 .ant-btn-default {
@@ -175,6 +176,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .body-container {
+    text-align: center;
+  }
+
   .ant-input {
     padding: 10px 30px !important;
     font-size: 1rem !important;
@@ -191,17 +196,17 @@ a {
     padding: 0 30px;
   }
   .title {
-    font-size: 4.5rem;
-    line-height: 4.5rem;
+    font-size: 6rem;
+    line-height: 6rem;
   }
   .sub-title {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   .coming-soon-txt {
-    font-size: 2.1rem;
-    line-height: 2.1rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .influencer-or-brand-container {
@@ -211,10 +216,12 @@ a {
 
   .social-buttons-container {
     margin-top: 20px;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .getting-discovered-txt {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .social-btn {
     max-width: 30px;
