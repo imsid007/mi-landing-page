@@ -100,7 +100,7 @@ a {
 }
 
 .influencer-or-brand-container {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 900;
   width: 100%;
   text-align: center;
@@ -177,6 +177,10 @@ a {
   max-width: 60px;
 }
 
+.or-txt {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 1200px) {
   .sub-title {
     font-size: 6rem;
@@ -227,6 +231,10 @@ a {
   .influencer-or-brand-container {
     font-size: 1.2rem;
     margin-top: 80px;
+  }
+
+  .or-txt {
+    font-size: 0.8rem;
   }
 
   .social-buttons-container {

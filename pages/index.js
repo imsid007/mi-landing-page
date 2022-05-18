@@ -35,7 +35,7 @@ export default function Home() {
           <div className="form-column">
             <div className="influencer-or-brand-container">
               <span style={{ color: "#EE2A7B" }}>INFLUENCER</span>{" "}
-              <span>OR</span>{" "}
+              <span className="or-txt">OR</span>{" "}
               <span style={{ color: "#51C8F7" }}>
                 BRAND<span style={{ color: "#fff" }}>?</span>
               </span>
