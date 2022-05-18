@@ -6,11 +6,7 @@ export default function Header() {
       <Col span={5}>
         <img className="brand-logo" src="images/mi-logo.png" />
       </Col>
-      <Col
-        className="getting-discovered-txt"
-        span={19}
-        style={{ textAlign: "end" }}
-      >
+      <Col className="getting-discovered-txt" span={19}>
         <div></div>
         <span style={{ color: "#fff", fontSize: "30px" }}>{'"'}</span>Getting
         you Discovered

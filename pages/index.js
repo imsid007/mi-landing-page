@@ -10,7 +10,7 @@ export default function Home() {
     <div className="home-container">
       <Header />
       <Row className="body-container">
-        <Col span={24} lg={12}>
+        <Col span={24} xl={12}>
           <div>
             <div>
               <div className="title">MEGA</div>
@@ -31,7 +31,7 @@ export default function Home() {
             </Row>
           </div>
         </Col>
-        <Col span={24} lg={12}>
+        <Col span={24} xl={12}>
           <div className="form-column">
             <div className="influencer-or-brand-container">
               <span style={{ color: "#EE2A7B" }}>INFLUENCER</span>{" "}
