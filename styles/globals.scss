@@ -181,6 +181,11 @@ a {
   font-size: 1.5rem;
 }
 
+.double-quotes-img {
+  max-width: 30px;
+  margin-right: 5px;
+}
+
 @media screen and (max-width: 1200px) {
   .sub-title {
     font-size: 6rem;
@@ -189,6 +194,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+  .double-quotes-img {
+    max-width: 20px;
+  }
+
   .ant-form-item-explain-error {
     text-align: left !important;
     margin-left: 20px !important;

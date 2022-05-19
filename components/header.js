@@ -7,9 +7,8 @@ export default function Header() {
         <img className="brand-logo" src="images/mi-logo.png" />
       </Col>
       <Col className="getting-discovered-txt" span={19}>
-        <div></div>
-        <span style={{ color: "#fff", fontSize: "30px" }}>{'"'}</span>Getting
-        you Discovered
+        <img className="double-quotes-img" src="/images/quots.png" />
+        Getting you Discovered
       </Col>
     </Row>
   );
