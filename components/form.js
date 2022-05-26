@@ -55,7 +55,9 @@ export default function SignInForm() {
       <canvas
         style={{
           position: "fixed",
-          width: isSuccess ? "100%" : 0,
+          width: "100%",
+          height: isSuccess ? "100%" : 0,
+          transition: "2s",
           top: 0,
           left: 0,
         }}
