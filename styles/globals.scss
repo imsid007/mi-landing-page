@@ -57,6 +57,47 @@ a {
   box-sizing: border-box;
 }
 
+.portfolio-btn {
+  color: #fff !important;
+  background: linear-gradient(95.32deg, #a900ff 0%, #ee2a7b 100%);
+  border-radius: 100px;
+  font-weight: 600;
+  padding: 15px 40px;
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+.cheers-txt {
+  font-weight: 800;
+  color: #ee2a7b;
+  font-size: 2rem;
+  letter-spacing: 0.03rem;
+}
+
+.success-subtitle {
+  color: #51c8f7;
+  margin-top: -10px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.success-txt {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  max-width: 350px;
+  margin: auto;
+}
+
+.success-conteinr {
+  border: 3px solid #51c8f7;
+  text-align: center;
+  border-radius: 50px;
+  max-width: 700px;
+  padding: 30px 90px;
+  float: right;
+}
+
 // antd styling update
 .ant-input {
   width: 100% !important;

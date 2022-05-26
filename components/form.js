@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Col, Row, Form, Input, Button } from "antd";
+import { Form, Input, Button } from "antd";
 var Airtable = require("airtable");
 import ConfettiGenerator from "confetti-js";
 
@@ -40,18 +40,10 @@ export default function SignInForm() {
     const confettiSettings = { target: "my-canvas" };
     const confetti = new ConfettiGenerator(confettiSettings);
     confetti.render();
-
     return () => confetti.clear();
   }, []);
   return (
-    <Form
-      name="basic"
-      initialValues={{
-        remember: true,
-      }}
-      onFinish={handleFormSubmit}
-      autoComplete="off"
-    >
+    <div>
       <canvas
         style={{
           position: "fixed",
@@ -63,28 +55,47 @@ export default function SignInForm() {
         }}
         id="my-canvas"
       ></canvas>
-      <Form.Item
-        name="userEmail"
-        rules={[
-          { type: "email", message: "Please enter valid email!" },
-          { required: true, message: "Please input your email!" },
-        ]}
-      >
-        <Input placeholder="Enter your Email" />
-      </Form.Item>
+      {!isSuccess ? (
+        <Form
+          name="basic"
+          initialValues={{
+            remember: true,
+          }}
+          onFinish={handleFormSubmit}
+          autoComplete="off"
+        >
+          <Form.Item
+            name="userEmail"
+            rules={[
+              { type: "email", message: "Please enter valid email!" },
+              { required: true, message: "Please input your email!" },
+            ]}
+          >
+            <Input placeholder="Enter your Email" />
+          </Form.Item>
 
-      <Form.Item
-        name="type"
-        rules={[{ required: true, message: "Please enter details" }]}
-      >
-        <Input placeholder="Are you an Influencer or a Brand?" />
-      </Form.Item>
+          <Form.Item
+            name="type"
+            rules={[{ required: true, message: "Please enter details" }]}
+          >
+            <Input placeholder="Are you an Influencer or a Brand?" />
+          </Form.Item>
 
-      <Form.Item style={{ textAlign: "center" }}>
-        <Button loading={isLoading} disabled={isLoading} htmlType="submit">
-          Join Us
-        </Button>
-      </Form.Item>
-    </Form>
+          <Form.Item style={{ textAlign: "center" }}>
+            <Button loading={isLoading} disabled={isLoading} htmlType="submit">
+              Join Us
+            </Button>
+          </Form.Item>
+        </Form>
+      ) : (
+        <div className="success-conteinr">
+          <div className="cheers-txt">CHEERS! 🍻 </div>
+          <div className="success-subtitle">Your Response is Submitted ! </div>
+          <div className="success-txt">
+            We appreciate your response. Our team will get back to you soon.
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
