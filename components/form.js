@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Row, Form, Input, Button } from "antd";
 var Airtable = require("airtable");
+import ConfettiGenerator from "confetti-js";
 
 export default function SignInForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -34,6 +35,14 @@ export default function SignInForm() {
       }
     );
   };
+
+  useEffect(() => {
+    const confettiSettings = { target: "my-canvas" };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+
+    return () => confetti.clear();
+  }, []);
   return (
     <Form
       name="basic"
@@ -43,6 +52,15 @@ export default function SignInForm() {
       onFinish={handleFormSubmit}
       autoComplete="off"
     >
+      <canvas
+        style={{
+          position: "fixed",
+          width: isSuccess ? "100%" : 0,
+          top: 0,
+          left: 0,
+        }}
+        id="my-canvas"
+      ></canvas>
       <Form.Item
         name="userEmail"
         rules={[

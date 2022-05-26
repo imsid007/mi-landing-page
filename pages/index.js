@@ -4,12 +4,10 @@ import Header from "../components/header";
 import SocialButtons from "../components/social-buttons";
 
 export default function Home() {
-  const onFinish = (values) => {
-    console.log("Success:", values);
-  };
   return (
     <div className="home-container">
       <Header />
+
       <div>
         <Row className="body-container">
           <Col span={24} xl={12}>
