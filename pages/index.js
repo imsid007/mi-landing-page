@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         <Row className="body-container">
           <Col span={24} xl={12}>
-            <div>
+            <div className="test">
               <div>
                 <div className="title">MEGA</div>
                 <div className="sub-title">IMPRESSION</div>
