@@ -1,4 +1,5 @@
 import { Col, Row, Form, Input, Button } from "antd";
+import SignInForm from "../components/form";
 import Header from "../components/header";
 import SocialButtons from "../components/social-buttons";
 
@@ -42,35 +43,7 @@ export default function Home() {
                 </span>
                 <div className="get-in-touch-txt">GET IN TOUCH WITH US</div>
               </div>
-              <Form
-                name="basic"
-                initialValues={{
-                  remember: true,
-                }}
-                onFinish={onFinish}
-                autoComplete="off"
-              >
-                <Form.Item
-                  name="username"
-                  rules={[
-                    { type: "email", message: "Please enter valid email!" },
-                    { required: true, message: "Please input your email!" },
-                  ]}
-                >
-                  <Input placeholder="Enter your Email" />
-                </Form.Item>
-
-                <Form.Item
-                  name="password"
-                  rules={[{ required: true, message: "Please enter details" }]}
-                >
-                  <Input placeholder="Are you an Influencer or a Brand?" />
-                </Form.Item>
-
-                <Form.Item style={{ textAlign: "center" }}>
-                  <Button htmlType="submit">Join Us</Button>
-                </Form.Item>
-              </Form>
+              <SignInForm />
             </div>
             <Row justify="center">
               <Col lg={0}>
