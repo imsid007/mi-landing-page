@@ -57,12 +57,24 @@ a {
 .ant-input {
   width: 100% !important;
   background-color: #fff0 !important;
-  border-radius: 50px !important;
+  border-radius: 100px !important;
   border: 3px solid $text-color !important;
   color: #fff !important;
-  padding: 20px 30px !important;
-  font-size: 1.2rem !important;
-  max-width: 550px !important;
+  padding: 35px 40px !important;
+  font-size: 1.5rem !important;
+  max-width: 750px !important;
+}
+
+.ant-btn {
+  background-color: $text-color !important;
+  border-radius: 100px !important;
+  font-size: 1.7rem !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-color: $text-color !important;
+  padding: 45px 80px !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .ant-form-item-control {
@@ -78,18 +90,6 @@ a {
   font-weight: 600;
 }
 
-.ant-btn {
-  background-color: $text-color !important;
-  border-radius: 100px !important;
-  font-size: 1.3rem !important;
-  line-height: 20px !important;
-  font-weight: 600 !important;
-  border-color: $text-color !important;
-  padding: 25px 60px !important;
-  display: flex !important;
-  align-items: center !important;
-}
-
 // ====================
 
 .get-in-touch-txt {
@@ -100,13 +100,13 @@ a {
 }
 
 .influencer-or-brand-container {
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   width: 100%;
   text-align: center;
   letter-spacing: 0.03rem;
   color: #fff;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .home-container {
@@ -120,26 +120,26 @@ a {
 }
 
 .title {
-  margin-top: 50px;
+  margin-top: 150px;
   color: $primary-color;
   letter-spacing: 0.02rem;
-  font-size: 8rem;
+  font-size: 11rem;
   font-weight: 900;
-  line-height: 8rem;
+  line-height: 11rem;
 }
 
 .sub-title {
   color: $secondary-color;
   font-weight: 600;
-  font-size: 7rem;
-  line-height: 7rem;
+  font-size: 9rem;
+  line-height: 9rem;
 }
 
 .we-are-txt {
   margin-top: 60px;
   font-weight: 700;
   color: $text-color;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   letter-spacing: 0.03rem;
 }
 
@@ -150,14 +150,14 @@ a {
 .coming-soon-txt {
   font-weight: 700;
   color: #fff;
-  font-size: 4.2rem;
-  line-height: 4.8rem;
-  letter-spacing: 0.03rem;
+  font-size: 5.8rem;
+  line-height: 6.2rem;
+  letter-spacing: 0.05rem;
 }
 
 .social-btn {
-  max-width: 50px;
-  margin-right: 20px;
+  max-width: 70px;
+  margin-right: 25px;
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -186,10 +186,56 @@ a {
   margin-right: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1650px) {
+  .we-are-txt {
+    font-size: 1.8rem;
+  }
+
+  .social-btn {
+    max-width: 50px;
+  }
+
+  .ant-input {
+    padding: 25px 30px !important;
+    font-size: 1.2rem !important;
+    max-width: 550px !important;
+  }
+
+  .ant-btn {
+    background-color: $text-color !important;
+    border-radius: 100px !important;
+    font-size: 1.2rem !important;
+    line-height: 1px !important;
+    font-weight: 600 !important;
+    border-color: $text-color !important;
+    padding: 12px 80px !important;
+  }
+
+  .coming-soon-txt {
+    font-size: 4.2rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .ant-btn {
+    font-size: 1.3rem !important;
+    line-height: 20px !important;
+    padding: 25px 60px !important;
+  }
+
   .sub-title {
     font-size: 6rem;
     line-height: 6rem;
+  }
+  .influencer-or-brand-container {
+    font-size: 2.4rem;
+    margin-top: 50px;
+  }
+
+  .title {
+    margin-top: 50px;
+    font-size: 8rem;
+    line-height: 8rem;
   }
 }
 
