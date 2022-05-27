@@ -2,7 +2,7 @@ import { Row, Col } from "antd";
 
 export default function Header() {
   return (
-    <Row align="middle" style={{ padding: "30px 0px" }}>
+    <Row align="middle" className="header">
       <Col span={5}>
         <img className="brand-logo" src="images/mi-logo.png" />
       </Col>

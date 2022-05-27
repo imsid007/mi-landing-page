@@ -34,10 +34,6 @@
     url(../fonts/Gilroy-Font/Gilroy-ExtraBold.ttf) format("opentype");
 }
 
-.description-container {
-  // background-color: red;
-}
-
 html,
 body {
   padding: 0;
@@ -63,7 +59,6 @@ a {
   border-radius: 100px;
   font-weight: 600;
   padding: 15px 40px;
-  margin-top: 50px;
   margin-right: 50px;
 }
 
@@ -87,6 +82,33 @@ a {
   font-weight: 600;
   max-width: 350px;
   margin: auto;
+}
+
+.header {
+  padding: 30px 0px;
+  height: 20vh;
+}
+
+.body-container {
+  height: 80vh;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.join-btn-continer {
+  height: 150px;
+}
+
+.form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 // antd styling update
@@ -152,7 +174,7 @@ a {
   text-align: center;
   letter-spacing: 0.03rem;
   color: #fff;
-  margin-top: 150px;
+  // margin-top: 150px;
 }
 
 .home-container {
@@ -166,7 +188,7 @@ a {
 }
 
 .title {
-  margin-top: 150px;
+  // margin-top: 150px;
   color: $primary-color;
   letter-spacing: 0.02rem;
   font-size: 11rem;
@@ -182,7 +204,7 @@ a {
 }
 
 .we-are-txt {
-  margin-top: 60px;
+  // margin-top: 60px;
   font-weight: 700;
   color: $text-color;
   font-size: 2.4rem;
@@ -190,7 +212,7 @@ a {
 }
 
 .social-buttons-container {
-  margin-top: 50px;
+  // margin-top: 50px;
 }
 
 .coming-soon-txt {
@@ -279,11 +301,9 @@ a {
   }
   .influencer-or-brand-container {
     font-size: 2.4rem;
-    margin-top: 50px;
   }
 
   .title {
-    margin-top: 50px;
     font-size: 8rem;
     line-height: 8rem;
   }
@@ -294,7 +314,44 @@ a {
   // justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .influencer-or-brand-container {
+    font-size: 2.4rem;
+    margin-top: 50px;
+  }
+
+  .sub-title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .influencer-or-brand-container {
+    margin-top: 50px;
+  }
+
+  .header,
+  .body-container {
+    height: auto;
+  }
+
+  .coming-soon-txt {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    margin-top: 50px;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .form-container {
+    height: auto;
+  }
+
+  .join-btn-continer {
+    height: 40px;
+  }
+
   .home-container {
     height: 100vh;
     width: 100vw;
@@ -396,7 +453,7 @@ a {
     margin: 10px;
   }
   .we-are-txt {
-    margin-top: 20px;
+    // margin-top: 20px;
     font-size: 1rem;
   }
   .get-in-touch-txt {

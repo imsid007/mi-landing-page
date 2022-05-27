@@ -88,12 +88,17 @@ export default function SignInForm() {
           </Form.Item>
         </Form>
       ) : (
-        <div className="success-conteinr">
-          <div className="cheers-txt">CHEERS! 🍻 </div>
-          <div className="success-subtitle">Your Response is Submitted ! </div>
-          <div className="success-txt">
-            We appreciate your response. Our team will get back to you soon.
+        <div>
+          <div className="success-conteinr">
+            <div className="cheers-txt">CHEERS! 🍻 </div>
+            <div className="success-subtitle">
+              Your Response is Submitted !{" "}
+            </div>
+            <div className="success-txt">
+              We appreciate your response. Our team will get back to you soon.
+            </div>
           </div>
+          <div className="join-btn-continer"></div>
         </div>
       )}
     </div>
