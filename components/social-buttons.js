@@ -2,7 +2,7 @@ import { Row } from "antd";
 
 export default function SocialButtons() {
   return (
-    <Row align="middle" justify="space-between">
+    <Row align="middle">
       <Row align="middle" className="social-buttons-container">
         <a
           target="_blanke"
