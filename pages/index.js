@@ -7,7 +7,9 @@ import SocialButtons from "../components/social-buttons";
 export default function Home() {
   const dots = ["", ".", "..", "..."];
   const [counter, setCounter] = useState(0);
+  const [screenSize, setScreenSize] = useState(0);
   useEffect(() => {
+    setScreenSize(document.body.clientWidth);
     setTimeout(() => {
       console.log(counter);
       if (counter < 3) {
@@ -30,7 +32,7 @@ export default function Home() {
                 <i>WE ARE</i>
               </div>
               <div className="coming-soon-txt">
-                <i>COMING SOON{dots[counter]}</i>
+                <i>COMING SOON{screenSize > 600 ? dots[counter] : "..."}</i>
               </div>
             </div>
             <Row>
