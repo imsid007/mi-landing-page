@@ -145,6 +145,11 @@ a {
   align-items: center !important;
 }
 
+.ant-form {
+  max-width: 750px !important;
+  margin: auto;
+}
+
 .ant-form-item-control {
   margin-bottom: 20px !important;
 }
@@ -154,7 +159,7 @@ a {
 }
 
 .ant-form-item-explain-error {
-  margin-left: 70px !important;
+  margin-left: 20px !important;
   font-weight: 600;
 }
 
