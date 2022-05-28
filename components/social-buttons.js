@@ -15,8 +15,7 @@ export default function SocialButtons() {
         </a>
         <a
           target="_blanke"
-          href=" https://www.facebook.com/Mega-Impression-115139334503965
-"
+          href=" https://www.facebook.com/Mega-Impression-115139334503965"
         >
           <img
             className="social-btn"
