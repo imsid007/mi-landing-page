@@ -11,7 +11,6 @@ export default function Home() {
   useEffect(() => {
     setScreenSize(document.body.clientWidth);
     setTimeout(() => {
-      console.log(counter);
       if (counter < 3) {
         setCounter((prev) => prev + 1);
       } else setCounter(0);
