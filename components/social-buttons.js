@@ -2,7 +2,7 @@ import { Col, Row } from "antd";
 
 export default function SocialButtons() {
   return (
-    <Row justify="center" align="middle">
+    <Row align="middle">
       <Row align="middle" className="social-buttons-container">
         <a
           target="_blanke"
@@ -47,11 +47,7 @@ export default function SocialButtons() {
           />
         </a>
       </Row>
-      <div
-        className="getting-discovered-txt getting-discovered-txt-mob desktop-hide"
-        span={24}
-        md={0}
-      >
+      <div className="getting-discovered-txt getting-discovered-txt-mob desktop-hide">
         <img className="double-quotes-img" src="/images/quots.png" />
         Getting you Discovered
       </div>
