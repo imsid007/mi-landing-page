@@ -334,7 +334,7 @@ a {
 
   .sub-title {
     margin-top: 0px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   .influencer-or-brand-container {
@@ -347,7 +347,7 @@ a {
   }
 
   .coming-soon-txt {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 
   .title {
@@ -358,12 +358,26 @@ a {
 @media screen and (max-width: 600px) {
   .form-container {
     height: auto;
-    margin-bottom: 10px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .social-buttons-container {
+    margin-top: -20px;
+  }
+
+  .description-container {
+    justify-content: flex-start;
   }
 
   .header {
     padding: 25px 0px;
+    min-height: 10vh;
   }
+
+  .mobile-body-container {
+    min-height: 90vh;
+  }
+
   .desktop-hide {
     display: block;
   }
