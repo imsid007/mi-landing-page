@@ -6,9 +6,18 @@ export default function Header() {
       <Col span={5}>
         <img className="brand-logo" src="images/mi-logo.png" />
       </Col>
-      <Col className="getting-discovered-txt" span={19}>
+      <Col className="getting-discovered-txt" span={0} md={19}>
         <img className="double-quotes-img" src="/images/quots.png" />
         Getting you Discovered
+      </Col>
+      <Col className="getting-discovered-txt" span={19} md={0}>
+        <a
+          target="_blanke"
+          href="https://znap.link/megaimpression"
+          className="portfolio-btn"
+        >
+          Our Portfolio
+        </a>
       </Col>
     </Row>
   );
