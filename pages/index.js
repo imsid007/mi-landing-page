@@ -2,6 +2,7 @@ import { Col, Row } from "antd";
 import { useEffect, useState } from "react";
 import SignInForm from "../components/form";
 import Header from "../components/header";
+import Meta from "../components/meta";
 import SocialButtons from "../components/social-buttons";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <Header />
+      <Meta />
       <Row className="body-container">
         <Col span={24} xl={12}>
           <div className="description-container">

@@ -4,10 +4,14 @@ export default function Header() {
   return (
     <Row align="middle" className="header">
       <Col span={5}>
-        <img className="brand-logo" src="images/mi-logo.png" />
+        <img alt=" mi-logo" className="brand-logo" src="images/mi-logo.png" />
       </Col>
       <Col className="getting-discovered-txt" span={0} md={19}>
-        <img className="double-quotes-img" src="/images/quots.png" />
+        <img
+          alt="mi-quotes"
+          className="double-quotes-img"
+          src="/images/quots.png"
+        />
         Getting you Discovered
       </Col>
       <Col className="getting-discovered-txt" span={19} md={0}>

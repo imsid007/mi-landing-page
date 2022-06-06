@@ -9,6 +9,7 @@ export default function SocialButtons() {
           href="https://instagram.com/mega.impression?igshid=YmMyMTA2M2Y="
         >
           <img
+            alt="mi-social-icon"
             className="social-btn"
             src="/images/social-buttons/instagram.png"
           />
@@ -18,12 +19,14 @@ export default function SocialButtons() {
           href=" https://www.facebook.com/Mega-Impression-115139334503965"
         >
           <img
+            alt="mi-social-icon"
             className="social-btn"
             src="/images/social-buttons/facebook.png"
           />
         </a>
         <a target="_blanke" href=" https://twitter.com/Mega_Impression">
           <img
+            alt="mi-social-icon"
             className="social-btn"
             src="/images/social-buttons/twitter.png"
           />
@@ -33,6 +36,7 @@ export default function SocialButtons() {
           href=" https://www.linkedin.com/company/mega-impression/"
         >
           <img
+            alt="mi-social-icon"
             className="social-btn"
             src="/images/social-buttons/linkedIn.png"
           />
@@ -42,13 +46,18 @@ export default function SocialButtons() {
           href=" https://api.whatsapp.com/send/?phone=919519782246&text&app_absent=0"
         >
           <img
+            alt="mi-social-icon"
             className="social-btn"
             src="/images/social-buttons/whatsApp.png"
           />
         </a>
       </Row>
       <div className="getting-discovered-txt getting-discovered-txt-mob desktop-hide">
-        <img className="double-quotes-img" src="/images/quots.png" />
+        <img
+          alt="mi-qutoes"
+          className="double-quotes-img"
+          src="/images/quots.png"
+        />
         Getting you Discovered
       </div>
       <a
