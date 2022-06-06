@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { META_KEYWORDS } from "../meta-constants";
 
 export default function Meta() {
   return (
