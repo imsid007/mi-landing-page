@@ -47,7 +47,11 @@ export default function SocialButtons() {
           />
         </a>
       </Row>
-      <div className="getting-discovered-txt desktop-hide" span={24} md={0}>
+      <div
+        className="getting-discovered-txt getting-discovered-txt-mob desktop-hide"
+        span={24}
+        md={0}
+      >
         <img className="double-quotes-img" src="/images/quots.png" />
         Getting you Discovered
       </div>
