@@ -55,7 +55,7 @@ export default function SignInForm() {
         }}
         id="my-canvas"
       ></canvas>
-      {!isSuccess ? (
+      {isSuccess ? (
         <Form
           name="basic"
           initialValues={{
@@ -95,7 +95,8 @@ export default function SignInForm() {
               Your Response is Submitted !{" "}
             </div>
             <div className="success-txt">
-              We appreciate your response. Our team will get back to you soon.
+              We appreciate your response.
+              <br /> Our team will get back to you soon.
             </div>
           </div>
           <div className="join-btn-continer"></div>
