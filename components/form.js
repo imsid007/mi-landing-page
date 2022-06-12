@@ -10,15 +10,40 @@ export default function SignInForm() {
   const handleFormSubmit = (values) => {
     setIsLoading(true);
     //keys for abhas airtable database
-    var base = new Airtable({ apiKey: "keyuwXov4nJigZhgf" }).base(
-      "appp80MJ4jFLLpP88"
+    //   var base = new Airtable({ apiKey: "keyuwXov4nJigZhgf" }).base(
+    //     "appp80MJ4jFLLpP88"
+    //   );
+    //   base("users").create(
+    //     [
+    //       {
+    //         fields: {
+    //           email: values.userEmail,
+    //           type: values.type,
+    //         },
+    //       },
+    //     ],
+    //     function (err, records) {
+    //       if (err) {
+    //         setIsLoading(false);
+    //         return;
+    //       }
+    //       records.forEach(function (record) {
+    //         console.log("success");
+    //         setIsLoading(false);
+    //         setIsSuccess(true);
+    //       });
+    //     }
+    //   );
+    // };
+    var base = new Airtable({ apiKey: "key5us48qQCvNmhGz" }).base(
+      "appHhXPCoYbECOJgP"
     );
-    base("users").create(
+    base("Leads").create(
       [
         {
           fields: {
-            email: values.userEmail,
-            type: values.type,
+            Email: values.userEmail,
+            "Lead Type": values.type,
           },
         },
       ],
